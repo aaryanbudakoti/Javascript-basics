@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Dom learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+        }
+        .textheading{
+            color: white;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-black" >
     <div class="bg-black">
-        <h1 class="textheading">Dom learning</h1>
+        <h1 class="textheading" id="title">Dom learning</h1>
         <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
     </div>
 </body>
@@ -17,3 +25,19 @@
 <!-- Document Object Model -->
 <!-- It is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can interact with the page. -->
 <!-- It is a standard object model and programming interface for HTML. It defines the logical structure of documents and the way a document is accessed and manipulated. -->
+
+
+
+<!-- dom selectors  -->
+<!-- 1. getElementById() -->
+<!-- 2. getElementsByClassName() -->
+<!-- 3. getElementsByTagName() -->
+<!-- 4. querySelector()   -->
+<!-- 5. querySelectorAll() -->
+
+
+<!-- html collection and node list -    
+HTMLCollection and NodeList are both collections of DOM nodes, but they have some differences:
+1. HTMLCollection: It is a live collection of DOM elements. It is automatically updated when the document changes. It is returned by methods like getElementsByClassName() and getElementsByTagName().
+2. NodeList: It is a static collection of DOM nodes. It is not automatically updated when the document changes. It is returned by methods like querySelectorAll() and childNodes.
+-->
