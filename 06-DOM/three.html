@@ -30,10 +30,11 @@
     div.style.backgroundColor = "pink"
     div.style.padding = "10px"
     // div.innerHTML = "This is a div element"
-    document.body.appendChild(div) // <body>...<div class="my-div"
+    // document.body.appendChild(div) // <body>...<div class="my-div"
     // appendChild is used to add a child element to a parent element, in this case we are adding the div element as a child of the body element.
     
     const addText = document.createTextNode("This is a text node") // #text "This is a text node"
     div.appendChild(addText) // <div class="my-div" id="6">This is a div element #text "This is a text node"</div>
-    </script>
+    document.body.appendChild(div) // <body>...<div class="my-div" id 
+   </script>
 </html>
