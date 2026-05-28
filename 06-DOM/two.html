@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Aaryan Budakoti</title>
+</head>
+<body style = "background-color: black  ; color: white ; font-family: Arial, Helvetica, sans-serif;">
+    <div class="parent">
+        <div class="days">Monday</div>
+        <div class="days">Tuesday</div>
+        <div class="days">Wednesday</div>
+        <div class="days">Thursday</div>
+
+    </div>
+</body>
+
+<script>
+    const parent = document.querySelector(".parent")
+    // console.log(parent.children[0].innerHTML) // Monday
+    // console.log(parent.children[1].innerHTML) // Tuesday
+    
+
+    for (let i = 0; i < parent.children.length; i++) {
+        // console.log(parent.children[i].innerHTML)
+    } // Monday, Tuesday, Wednesday, Thursday
+
+    parent.children[0].style.color = "red"
+    // console.log(parent.firstElementChild) // <div class="days" style="color: red;">Monday</div>
+    // console.log(parent.firstElementChild.innerHTML) // Monday
+
+   const firstDay = document.querySelector(".days")
+    // console.log(firstDay) // <div class="days" style="color: red;">Monday</div>
+    // console.log(firstDay.parentElement) // <div class="parent">...</div>
+    // console.log(firstDay.nextElementSibling) // <div class="days">Tuesday</div>
+
+    console.log("nodes: ", parent.childNodes) // nodes:  NodeList(9) [text, div.days, text, div.days, text, div.days, text, div.days, text]
+    </script>
+</html>
